@@ -102,7 +102,7 @@ fi
 cd ~/chromium/src
 sudo ./build/install-build-deps-android.sh
 sudo ./build/install-build-deps.sh --no-syms --lib32 --arm --no-prompt
-gclient runhooks
+gclient runhooks -j4
 
 # Chromium build setup.
 # https://code.google.com/p/chromium/wiki/LinuxBuildInstructions
